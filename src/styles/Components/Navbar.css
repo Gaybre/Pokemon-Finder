@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: var(--medium);
+  background-color: #f00;
+}
+
+.navbar img {
+  height: 4rem;
+}
