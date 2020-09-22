@@ -1,22 +1,37 @@
 import React from 'react'
-import { Buttons, Body } from './styles'
+import { connect } from 'react-redux'
+import { Footer } from './styles'
 
 import Container from '../../components/Container/Container'
 import FinderBody from '../../components/FinderBody/FinderBody'
 import PokeButton from '../../components/Button/PokeButton'
 
-const Finder = () => {
+import * as pokemonActions from '../../actions/pokemonActions'
+
+
+const Finder = (props) => {
   return (
+    console.log('props', props),
     <Container title="¡Atrapalos ya!">
-      <Body>
-        <FinderBody pokemon="name: pikachu" graph="graph" />
-        <Buttons>
-          <PokeButton title="Capturar" primary/>
-          <PokeButton title="Siguiente"/>
-        </Buttons>
-      </Body>
+      <FinderBody
+        pokemon="name: pikachu"
+        graph="graph"
+      />
+      <Footer>
+        <PokeButton
+          primary
+          title="Capturar"
+          onClick={() => props.savePokemon()}
+        />
+        <PokeButton
+          title="Siguiente"
+          onClick={() => props.getNextPokemon()}
+        />
+      </Footer>
     </Container>
   )
 }
 
-export default Finder
+const mapStateToProps = ({ pokemonReducer }) => pokemonReducer
+
+export default connect(mapStateToProps, pokemonActions)(Finder)

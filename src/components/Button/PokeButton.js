@@ -4,10 +4,10 @@ import { Button, Image } from './styles'
 import Pokeball from '../../assets/img/pokeball.png'
 import Next from '../../assets/img/next.png'
 
-const PokeButton = ({primary, title}) => {
+const PokeButton = ({primary, title, onClick}) => {
   if(primary) {
     return (
-      <Button primary>
+      <Button primary onClick={onClick}>
         {title}
         <Image src={Pokeball} />
       </Button>
@@ -15,7 +15,7 @@ const PokeButton = ({primary, title}) => {
   }
 
   return (
-    <Button>
+    <Button onClick={onClick}>
       {title}
       <Image src={Next} />
     </Button>

@@ -11,6 +11,9 @@ export const Section = styled.section`
   border-radius: var(--border);
   background: rgba(255,255,255,.2);
   box-shadow: -1px 1px 5px var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 export const Header = styled.div`
