@@ -7,10 +7,15 @@ export const GlobalStyles = createGlobalStyle`
     --large: 50px;
 
     --border: 10px;
+
+    --blue: #426CB8;
+    --red: #f00;
+    --grayscale-1: #fff;
   }
 
   * {
     margin: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
 
