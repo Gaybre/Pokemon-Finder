@@ -9,7 +9,7 @@ const PokeButton = ({primary, title, onClick}) => {
     return (
       <Button primary onClick={onClick}>
         {title}
-        <Image src={Pokeball} />
+        <Image src={Pokeball} alt="pokeball" />
       </Button>
     )
   }
@@ -17,7 +17,7 @@ const PokeButton = ({primary, title, onClick}) => {
   return (
     <Button onClick={onClick}>
       {title}
-      <Image src={Next} />
+      <Image src={Next} alt="nextPokemon" />
     </Button>
   )
 }
