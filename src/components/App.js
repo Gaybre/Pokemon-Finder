@@ -5,7 +5,7 @@ import { GlobalStyles } from './GlobalStyles'
 import Layout from '../components/Layout/Layout'
 import Home from '../pages/Home'
 import Finder from '../pages/Finder/Finder'
-import Viewer from '../pages/Viewer'
+import Viewer from '../pages/Viewer/Viewer'
 
 const App = () => {
   return (

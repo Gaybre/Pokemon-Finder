@@ -6,7 +6,7 @@ export const Section = styled.section`
   height: 90%;
   margin: 0 auto;
   margin-top: var(--medium);
-  padding: var(--small);
+  padding: var(--small) var(--large);
   padding-top: var(--large);
   border-radius: var(--border);
   background: rgba(255,255,255,.2);

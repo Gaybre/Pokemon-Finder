@@ -11,6 +11,7 @@ export const Button = styled.button`
   border: 2px solid var(--red);
   background: ${props => props.primary ? "var(--red)" : "transparent"};
   color: ${props => props.primary ? "var(--grayscale-1)" : "var(--red)"};
+  filter: drop-shadow(-10px 10px 4px var(--blue));
   font-weight: bold;
   transition: 200ms;
   outline: none;
