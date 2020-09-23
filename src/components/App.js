@@ -9,7 +9,7 @@ import Viewer from '../pages/Viewer/Viewer'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Pokemon-Finder">
       <GlobalStyles />
       <Layout>
         <Switch>
