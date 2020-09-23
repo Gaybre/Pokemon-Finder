@@ -25,3 +25,10 @@ export const savePokemon = () => (dispatch) => {
     type: 'savePokemon',
   })
 }
+
+export const turnNotification = (newState) => (dispatch) => {
+  dispatch({
+    type: 'turnNotification',
+    payload: newState,
+  })
+}

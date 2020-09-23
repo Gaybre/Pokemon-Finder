@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const Label = styled.article`
   width: fit-content;
+  height: fit-content;
   padding: 0 calc(var(--small) / 2);
-  margin-right: calc(var(--small) / 2);
+  margin-right: var(--small);
   border-radius: var(--border);
   color: var(--grayscale-1);
   font-weight: bold;

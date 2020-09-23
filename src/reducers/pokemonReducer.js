@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
   currentPokemon: [],
   pokemonsCollection: [],
+  notificationIsActive: false,
   loading: false,
   error: null,
 }
@@ -31,6 +32,11 @@ export default (state = INITIAL_STATE, action) => {
         currentPokemon: action.payload,
         loading: false,
         error: null,
+      }
+    case 'turnNotification':
+      return {
+        ...state,
+        notificationIsActive: action.payload,
       }
     default:
       return state

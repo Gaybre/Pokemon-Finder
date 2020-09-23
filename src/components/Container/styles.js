@@ -3,11 +3,12 @@ import styled from 'styled-components'
 export const Section = styled.section`
   position: relative;
   width: 80%;
-  height: 90%;
+  min-height: 250px;
+  height: fit-content;
   margin: 0 auto;
-  margin-top: var(--medium);
-  padding: var(--small) var(--large);
-  padding-top: var(--large);
+  margin-top: var(--large);
+  margin-bottom: var(--large);
+  padding: var(--large);
   border-radius: var(--border);
   background: rgba(255,255,255,.2);
   box-shadow: -1px 1px 5px var(--blue);
@@ -32,4 +33,5 @@ export const Header = styled.div`
   clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
   background-color: var(--blue);
   color: var(--grayscale-1);
+  z-index: var(--zindex-header);
 `

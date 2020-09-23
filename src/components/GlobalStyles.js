@@ -41,5 +41,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 16px;
+    --zindex-header: 5;
+    --zindex-notification: 4;
   }
 `

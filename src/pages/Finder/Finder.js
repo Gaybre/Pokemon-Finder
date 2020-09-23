@@ -5,6 +5,7 @@ import { Footer } from './styles'
 import Container from '../../components/Container/Container'
 import FinderBody from '../../components/FinderBody/FinderBody'
 import PokeButton from '../../components/Button/PokeButton'
+import Notification from '../../components/Notification/Notification'
 import Loader from '../../components/Loader/Loader'
 
 import * as pokemonActions from '../../actions/pokemonActions'
@@ -25,6 +26,15 @@ const Finder = (props) => {
     if (count === 1) getNextPokemon(1)
   }, [])
 
+  const savePokemon = () => {
+    props.turnNotification(true)
+    props.savePokemon()
+    setTimeout(() => {
+      props.turnNotification(false)
+      getNextPokemon()
+    }, 4000)
+  }
+
   return (
     <Container title={pokemon.name}>
       {props.loading
@@ -39,13 +49,17 @@ const Finder = (props) => {
         <PokeButton
           primary
           title="Capturar"
-          onClick={() => props.savePokemon()}
+          onClick={() => savePokemon()}
         />
         <PokeButton
           title="Siguiente"
-          onClick={() => getNextPokemon(3)}
+          onClick={() => getNextPokemon()}
         />
       </Footer>
+      {props.notificationIsActive
+      ? <Notification pokemon={pokemon.name}/>
+      : null
+      }
     </Container>
   )
 }

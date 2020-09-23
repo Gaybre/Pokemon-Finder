@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: inherit;
-  gap: calc(var(--small) / 2);
+  gap: var(--small) calc(var(--small) / 2);
 `
 
 export const CardContainer = styled.article`
@@ -18,6 +18,7 @@ export const CardContainer = styled.article`
   border-top-right-radius: var(--border);
   box-shadow: -1px 1px 5px var(--blue);
   background: ${props => `var(--${props.type})`};
+  filter: drop-shadow(-10px 10px 4px var(--blue));
 `
 
 export const CardDetails = styled.div`
@@ -30,6 +31,7 @@ export const CardDetails = styled.div`
   border-top-left-radius: calc(var(--border)*3);
   border-top-right-radius: calc(var(--border)*3);
   color: var(--grayscale-3);
+  font-weight: bold;
   background-color: var(--grayscale-1);
   h4 {
     text-align: center;
@@ -39,6 +41,9 @@ export const CardDetails = styled.div`
     margin: 0 auto;
     margin-bottom: calc(var(--small) / 2);
     border: 1px solid ${props => `var(--${props.type})`};
+  }
+  span {
+  font-weight: normal;
   }
 `
 

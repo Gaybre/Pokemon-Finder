@@ -10,7 +10,6 @@ const Viewer = (props) => {
   const list = props.pokemonsCollection
 
   return (
-    console.log(props),
     <Container title={`${list.length} Capturados`}>
       {list.length
       ? <Card list={ list } />

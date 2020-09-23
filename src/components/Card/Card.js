@@ -18,12 +18,12 @@ const Card = ({list}) => {
             <hr />
             <p>
               <small>
-                Tipo: {pokemon.types[0].type.name}
+                Tipo: <span>{pokemon.types[0].type.name}</span>
               </small>
             </p>
             <p>
               <small>
-                Experiencia base: {pokemon.base_experience}
+                Experiencia base: <span>{pokemon.base_experience}</span>
               </small>
             </p>
           </CardDetails>
