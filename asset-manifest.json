@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.js": "/Pokemon-Finder/static/js/main.858da219.chunk.js",
-    "main.js.map": "/Pokemon-Finder/static/js/main.858da219.chunk.js.map",
+    "main.js": "/Pokemon-Finder/static/js/main.497020a1.chunk.js",
+    "main.js.map": "/Pokemon-Finder/static/js/main.497020a1.chunk.js.map",
     "runtime-main.js": "/Pokemon-Finder/static/js/runtime-main.d7969089.js",
     "runtime-main.js.map": "/Pokemon-Finder/static/js/runtime-main.d7969089.js.map",
-    "static/js/2.04c38c35.chunk.js": "/Pokemon-Finder/static/js/2.04c38c35.chunk.js",
-    "static/js/2.04c38c35.chunk.js.map": "/Pokemon-Finder/static/js/2.04c38c35.chunk.js.map",
+    "static/js/2.fa3fe400.chunk.js": "/Pokemon-Finder/static/js/2.fa3fe400.chunk.js",
+    "static/js/2.fa3fe400.chunk.js.map": "/Pokemon-Finder/static/js/2.fa3fe400.chunk.js.map",
     "index.html": "/Pokemon-Finder/index.html",
-    "precache-manifest.bbf46f7220b7cd019819713b255a62e7.js": "/Pokemon-Finder/precache-manifest.bbf46f7220b7cd019819713b255a62e7.js",
+    "precache-manifest.8728c061d0a227eec595a099e6653666.js": "/Pokemon-Finder/precache-manifest.8728c061d0a227eec595a099e6653666.js",
     "service-worker.js": "/Pokemon-Finder/service-worker.js",
-    "static/js/2.04c38c35.chunk.js.LICENSE.txt": "/Pokemon-Finder/static/js/2.04c38c35.chunk.js.LICENSE.txt",
+    "static/js/2.fa3fe400.chunk.js.LICENSE.txt": "/Pokemon-Finder/static/js/2.fa3fe400.chunk.js.LICENSE.txt",
+    "static/media/atrapalos.png": "/Pokemon-Finder/static/media/atrapalos.7a965383.png",
     "static/media/capturado.png": "/Pokemon-Finder/static/media/capturado.f829bed6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d7969089.js",
-    "static/js/2.04c38c35.chunk.js",
-    "static/js/main.858da219.chunk.js"
+    "static/js/2.fa3fe400.chunk.js",
+    "static/js/main.497020a1.chunk.js"
   ]
 }
