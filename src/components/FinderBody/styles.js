@@ -11,7 +11,7 @@ export const MainSection = styled.div`
   justify-content: center;
   div {
     flex: 1;
-    text-align: center;
+    align-self: center;
   }
 `
 
@@ -25,9 +25,12 @@ export const Types = styled.div`
   justify-content: center;
   align-items: baseline;
   h4 {
-    text-align: left;
     margin-right: var(--medium);
     margin-bottom: var(--medium);
+    text-align: left;
+    color: var(--blue);
+    font-weight: bold;
+    letter-spacing: .1rem;
     filter: drop-shadow(-10px 10px 4px var(--blue));
   }
 `

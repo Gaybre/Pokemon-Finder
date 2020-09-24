@@ -3,8 +3,9 @@ import { Container, MainSection, Image, Types } from './styles'
 
 import Pokeball from '../../assets/img/pokeball.png'
 import Type from '../Type/Type'
+import PokemonRadarChart from '../RadarChart/RadarChart'
 
-const FinderBody = ({pokemon, graph}) => {
+const FinderBody = ({pokemon, forGraph}) => {
   return (
     <Container>
       {pokemon.types &&
@@ -42,9 +43,14 @@ const FinderBody = ({pokemon, graph}) => {
           </>
         </div>
         <div>
-          <h1>
-            { graph }
-          </h1>
+          {pokemon.types
+          ?
+            <PokemonRadarChart
+              data={forGraph}
+              type={pokemon.types[0].type.name}
+            />
+          : null
+          }
         </div>
       </MainSection>
     </Container>

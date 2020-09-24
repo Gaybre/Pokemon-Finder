@@ -13,7 +13,7 @@ export const Alert = styled.div`
   color: var(--grayscale-1);
   background-color: rgba(0,0,0, .3);
   z-index: var(--zindex-notification);
-  animation: fadeIn 5s 1;
+  animation: fadeIn 4s 1;
 
   @keyframes fadeIn {
     0% {
@@ -56,11 +56,11 @@ export const Message = styled.div`
   right: 0;
   margin: 0 auto;
   font-size:.1rem;
-  animation: fadetext 5s 1;
+  animation: fadetext 4s 1;
   img {
     width: 10px;
     opacity: 0;
-    animation: fadeImg 4s 1;
+    animation: fadeImg 3s 1;
   }
 
   @keyframes fadeImg {

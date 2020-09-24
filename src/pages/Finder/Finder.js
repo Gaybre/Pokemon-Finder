@@ -13,6 +13,15 @@ import * as pokemonActions from '../../actions/pokemonActions'
 const Finder = (props) => {
   const [count, setCount] = useState(1)
   const pokemon = props.currentPokemon
+  const forGraph = pokemon.stats
+  // [{
+    // 'hp': pokemon.stats[0].base_stat,
+    // 'Ataque': pokemon.stats[1].base_stat,
+    // 'Defensa': pokemon.stats[2].base_stat,
+    // 'Ataque especial': pokemon.stats[3].base_stat,
+    // 'Defensa especial': pokemon.stats[4].base_stat,
+    // 'Velocidad': pokemon.stats[5].base_stat,
+  // }]
 
   const getNextPokemon = () => {
     const random = Math.ceil(Math.random() * 10)
@@ -29,10 +38,10 @@ const Finder = (props) => {
   const savePokemon = () => {
     props.turnNotification(true)
     props.savePokemon()
-    setTimeout(() => getNextPokemon(), 3000)
-    setTimeout(() => props.turnNotification(false), 4000)
+    setTimeout(() => getNextPokemon(), 2500)
+    setTimeout(() => props.turnNotification(false), 3000)
   }
-
+  // if(pokemon)console.log(pokemon.stats)
   return (
     <Container title={pokemon.name}>
       {props.loading
@@ -40,7 +49,7 @@ const Finder = (props) => {
       :
         <FinderBody
           pokemon={pokemon}
-          graph="graph"
+          forGraph={forGraph}
         />
       }
       <Footer>

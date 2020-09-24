@@ -17,6 +17,9 @@ export const Button = styled.button`
   transition: 200ms;
   outline: none;
   cursor: pointer;
+  :hover {
+    width: 170px;
+  }
   :active {
     transform: scale(.8)
   }
