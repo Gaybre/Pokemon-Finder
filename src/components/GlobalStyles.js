@@ -36,10 +36,10 @@ export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
   html {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     --zindex-header: 5;
     --zindex-notification: 4;

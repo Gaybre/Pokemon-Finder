@@ -13,14 +13,15 @@ export const Button = styled.button`
   color: ${props => props.primary ? "var(--grayscale-1)" : "var(--red)"};
   filter: drop-shadow(-10px 10px 4px var(--blue));
   font-weight: bold;
+  letter-spacing: .1rem;
   transition: 200ms;
   outline: none;
   cursor: pointer;
   :active {
     transform: scale(.8)
   }
-`
-
-export const Image = styled.img`
-  width: var(--medium);
+  img {
+    width: var(--medium);
+    filter: drop-shadow(0 0 2px var(--blue));
+  }
 `

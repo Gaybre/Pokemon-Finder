@@ -29,10 +29,8 @@ const Finder = (props) => {
   const savePokemon = () => {
     props.turnNotification(true)
     props.savePokemon()
-    setTimeout(() => {
-      props.turnNotification(false)
-      getNextPokemon()
-    }, 4000)
+    setTimeout(() => getNextPokemon(), 3000)
+    setTimeout(() => props.turnNotification(false), 4000)
   }
 
   return (
