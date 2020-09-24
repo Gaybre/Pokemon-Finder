@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Pokemon-Finder/static/js/main.bb13f747.chunk.js",
-    "main.js.map": "/Pokemon-Finder/static/js/main.bb13f747.chunk.js.map",
+    "main.js": "/Pokemon-Finder/static/js/main.858da219.chunk.js",
+    "main.js.map": "/Pokemon-Finder/static/js/main.858da219.chunk.js.map",
     "runtime-main.js": "/Pokemon-Finder/static/js/runtime-main.d7969089.js",
     "runtime-main.js.map": "/Pokemon-Finder/static/js/runtime-main.d7969089.js.map",
     "static/js/2.04c38c35.chunk.js": "/Pokemon-Finder/static/js/2.04c38c35.chunk.js",
     "static/js/2.04c38c35.chunk.js.map": "/Pokemon-Finder/static/js/2.04c38c35.chunk.js.map",
     "index.html": "/Pokemon-Finder/index.html",
-    "precache-manifest.717fc1467471ff065b2dbadefec0c1ca.js": "/Pokemon-Finder/precache-manifest.717fc1467471ff065b2dbadefec0c1ca.js",
+    "precache-manifest.bbf46f7220b7cd019819713b255a62e7.js": "/Pokemon-Finder/precache-manifest.bbf46f7220b7cd019819713b255a62e7.js",
     "service-worker.js": "/Pokemon-Finder/service-worker.js",
     "static/js/2.04c38c35.chunk.js.LICENSE.txt": "/Pokemon-Finder/static/js/2.04c38c35.chunk.js.LICENSE.txt",
     "static/media/capturado.png": "/Pokemon-Finder/static/media/capturado.f829bed6.png"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.d7969089.js",
     "static/js/2.04c38c35.chunk.js",
-    "static/js/main.bb13f747.chunk.js"
+    "static/js/main.858da219.chunk.js"
   ]
 }
