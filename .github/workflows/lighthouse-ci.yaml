@@ -10,6 +10,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.x
+      - name: install dependencies
+        run: |
+          npm install
+      - name: generate build
+        run: |
+          npm run build
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.4.x
