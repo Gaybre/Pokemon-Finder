@@ -17,14 +17,14 @@ const Finder = (props) => {
   const getNextPokemon = () => {
     const random = Math.ceil(Math.random() * 10)
     let nextItem = random + count
-    // if (nextItem === pokemon.id) nextItem += 1
+    if (nextItem === pokemon.id) nextItem += 1
     props.getNextPokemon(nextItem)
     setCount(count + 5)
   }
 
   useEffect(() => {
-    if (count === 1) getNextPokemon(1)
-  }, [])
+    if (count === 1) getNextPokemon()
+  })
 
   const savePokemon = () => {
     props.turnNotification(true)
