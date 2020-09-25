@@ -21,7 +21,6 @@ const FinderBody = ({pokemon, forGraph}) => {
       }
       <MainSection>
         <div>
-          <>
             {pokemon.sprites
             ?
               <>
@@ -40,7 +39,6 @@ const FinderBody = ({pokemon, forGraph}) => {
                 alt='Pokemon'
               />
             }
-          </>
         </div>
         <div>
           {pokemon.types

@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { Nav, Image, Menu } from './styles'
+import Pokedex from '../../assets/img/pokedex.png'
+import Mapa from '../../assets/img/mapa.png'
 
 const Navbar = () => {
   return (
@@ -14,10 +16,12 @@ const Navbar = () => {
       </NavLink>
       <Menu>
         <NavLink to ="/finder">
-          Finder
+          <img src={Mapa} alt="mapa" />
+          Buscar
         </NavLink>
         <NavLink to="/viewer">
-          Viewer
+          <img src={Pokedex} alt="pokedex" />
+          Pokedex
         </NavLink>
       </Menu>
     </Nav>

@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
   :root {
     --small: 20px;
     --medium: 30px;
@@ -44,5 +45,11 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     --zindex-header: 5;
     --zindex-notification: 4;
+  }
+
+  h1,
+  a {
+    font-family: 'Timmana', sans-serif;
+    letter-spacing: .2rem;
   }
 `

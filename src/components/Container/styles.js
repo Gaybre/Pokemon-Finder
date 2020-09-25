@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const Section = styled.section`
   position: relative;
-  width: 80%;
-  min-height: 335px;
+  max-width: 80%;
+  min-width: 560px;
+  min-height: 390px;
   height: fit-content;
   margin: 0 auto;
   margin-top: var(--large);

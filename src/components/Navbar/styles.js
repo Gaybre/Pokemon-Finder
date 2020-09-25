@@ -23,7 +23,13 @@ export const Menu = styled.div`
     font-size: 1.5rem;
     font-weight: bold;
   }
+  img {
+    width: 35px;
+    margin-right: calc(var(--small) / 2);
+    margin-bottom: -10px;
+  }
   .active {
     box-shadow: inset 0 -3px var(--grayscale-1);
+    filter: drop-shadow(-2px -1px 5px var(--blue));
   }
 `
