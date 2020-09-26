@@ -12,7 +12,7 @@ The project use the [Pokémon API](https://pokeapi.co/ "Pokémon API") and was d
 > You can try this app, just [click here](https://gaybre.github.io/Pokemon-Finder/ "click here").
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Gaybre/Pokemon-Finder/master/src/assets/img/portada.png" height="200" alt="pokemon-finder">
+<img src="https://raw.githubusercontent.com/Gaybre/Pokemon-Finder/master/src/assets/img/portada.png" height="250" alt="pokemon-finder">
 </div>
 
 ## Technologies
